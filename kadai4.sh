@@ -1,8 +1,6 @@
 #!/bin/sh
 
 
-ERROR_EXIT (){
-
 #TEST1-1:
 echo "5 is natural number" > /tmp/$$-ans
 ./kadai3.sh 5 > /tmp/$$-out || ERROR_EXIT "exe chigau"
