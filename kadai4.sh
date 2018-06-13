@@ -34,7 +34,7 @@ echo "3 is natural number" > $tmp-ans
 diff $tmp-ans $tmp-out || ERROR_EXIT "diff chigau"
 
 #TEST1-6:
-echo "4 is not natural number" > $tmp-ans
+echo "4 is natural number" > $tmp-ans
 ./kadai3.sh 4 > $tmp-out || ERROR_EXIT "exe chigau"
 diff $tmp-ans $tmp-out || ERROR_EXIT "diff chigau"
 
