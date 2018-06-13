@@ -2,7 +2,7 @@
 
 a=$1
 
- [ $a -le 1 ]; then
+if [ $a -le 1 ]; then
  echo "$a is not natural number"
 
  else
