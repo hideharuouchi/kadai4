@@ -6,7 +6,7 @@ ERROR_EXIT (){
   echo "$1" >&2
   rm -f $tmp-*
   exit 1
-}
+
 
 #TEST1-1:
 echo "-1 is not natural number" > $tmp-ans
