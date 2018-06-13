@@ -3,7 +3,7 @@
 a=$1
 
 if [ $a -le 1 ]; then
- echo "$a is not natural number"
+ echo "$a is natural number"
 
  else
 
