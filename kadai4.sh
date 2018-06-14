@@ -10,12 +10,9 @@ ERROR_EXIT (){
 
 #TEST1   #1以下の数字についてチェック
 
-declare -a array = () 
-declare -a array = ("-5" "-4" "-3" "-2" "-1" "0" "1")
-
-for ((i=0; i<7; i++)); do
-  echo "$array[i] is not natural number" > $tmp-ans
-  ./kadai3.sh $array[i] > $tmp-out || ERROR_EXIT "exe chigau"
+for ((i=-5; i<2; i++)); do
+  echo "$i is not natural number" > $tmp-ans
+  ./kadai3.sh $i > $tmp-out || ERROR_EXIT "exe chigau"
   diff $tmp-ans $tmp-out || ERROR_EXIT "diff chigau"
 done
 
