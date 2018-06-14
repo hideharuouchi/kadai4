@@ -10,7 +10,7 @@ ERROR_EXIT (){
 
 #TEST1   #1以下の数字についてチェック
 
-array=["-5" "-4" "-3" "-2" "-1" "0" "1"]
+array=[-5 -4 -3 -2 -1 0 1]
 
 for item in ${array[@]}; do
   echo "$item is not natural number" > $tmp-ans
