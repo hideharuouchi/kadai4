@@ -3,7 +3,7 @@
 a=$1
 
 if [ $a -le 1 ]; then
- echo "$a is not natural number"
+ echo "$a is not prime number"
 
  else
 
@@ -17,9 +17,9 @@ if [ $a -le 1 ]; then
   done
 
   if [ $flag -eq 0 ]; then
-    echo "$a is natural number"
+    echo "$a is prime number"
     else 
-     echo "$a is not natural number"
+     echo "$a is not prime number"
   fi
 
 fi
