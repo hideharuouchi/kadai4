@@ -36,7 +36,7 @@ TEST3  #2以上の素数以外の数についてチェック
 declare -a array='([0]="4" [1]="6" [2]="8" [3]="9" [4]="10" [5]="12" [6]="14")'
 
 for ((i=0;i<7;i++)) do
-  echo "${array[i]} not prime number" > $tmp-ans
+  echo "${array[i]} is not prime number" > $tmp-ans
   ./kadai3.sh ${array[i]} > $tmp-out || ERROR_EXIT "exe chigau"
   diff $tmp-ans $tmp-out || ERROR_EXIT "diff chigau"
 done
